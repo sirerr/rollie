@@ -9,6 +9,7 @@ public class LightMoveUp : BasicWorldAction {
 	public bool levertrig = false;
 	public bool trigger2 = false;
 	public Animator anim;
+	public Animator anim2;
 	public float YSpeed = .3f;
 	float startY;
 	float MaxDistance = .17f;
@@ -42,6 +43,7 @@ public class LightMoveUp : BasicWorldAction {
 		{
 			//print ("disguy");
 			anim.SetBool ("lightturn", true);
+			anim2.SetBool ("interact", true);
 			trigger2 = true;
             DoorAction.InteractStart();
 		}
