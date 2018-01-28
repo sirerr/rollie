@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class MotherShip : MonoBehaviour 
 {
+	public Animator anim;
+
+	// Use this for initialization
+	void Start () {
+
+	}
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.name == "RollieDude")
-		{
+		print ("got hit by something");
+			anim.SetBool ("FlyAway", true);
 			collision.gameObject.SetActive (false);
-		}
-			
+	
 	}
 }
