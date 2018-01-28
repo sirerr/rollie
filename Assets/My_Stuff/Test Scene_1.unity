@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 10886996}
   - component: {fileID: 10886995}
   - component: {fileID: 10886997}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ramp1_level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 49672716}
   - component: {fileID: 49672715}
   - component: {fileID: 49672717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: levelonemainobject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 73297071}
   - component: {fileID: 73297075}
   - component: {fileID: 73297073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RollieDude
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 181902911}
   - component: {fileID: 181902912}
   - component: {fileID: 181902913}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trapdoororigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,6 +1241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343e99abeab38ba4293747535399ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continuous: 0
   anim: {fileID: 0}
 --- !u!1 &183251949
 GameObject:
@@ -1251,7 +1252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183251951}
   - component: {fileID: 183251950}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: New Sprite (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1327,7 @@ GameObject:
   - component: {fileID: 252955954}
   - component: {fileID: 252955953}
   - component: {fileID: 252955952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1411,7 @@ GameObject:
   - component: {fileID: 326747861}
   - component: {fileID: 326747860}
   - component: {fileID: 326747859}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1495,7 @@ GameObject:
   - component: {fileID: 371365139}
   - component: {fileID: 371365141}
   - component: {fileID: 371365142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MotherShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,7 +1639,7 @@ GameObject:
   - component: {fileID: 820250357}
   - component: {fileID: 820250360}
   - component: {fileID: 820250359}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gear1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2039,6 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3fcd11c4bfbb4498f3aac5467d5573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continuous: 0
   GearsSame: []
   GearsOpposite:
   - {fileID: 1680188709}
@@ -2051,7 +2053,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1026331158}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gears
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2087,7 @@ GameObject:
   - component: {fileID: 1090236708}
   - component: {fileID: 1090236706}
   - component: {fileID: 1090236707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gear1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2116,6 +2118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3fcd11c4bfbb4498f3aac5467d5573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continuous: 0
   GearsSame:
   - {fileID: 1680188709}
   GearsOpposite:
@@ -2559,7 +2562,7 @@ GameObject:
   - component: {fileID: 1349608306}
   - component: {fileID: 1349608305}
   - component: {fileID: 1349608304}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2588,7 +2591,7 @@ Camera:
   m_GameObject: {fileID: 1349608303}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -2604,9 +2607,9 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1024
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 7462e6c9aa953f044a9b6a7e016035e1, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -2623,7 +2626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1349608303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43949962, y: 0.8, z: -0.4239989}
+  m_LocalPosition: {x: -0.05, y: 0.8, z: -0.441}
   m_LocalScale: {x: 0.053366184, y: 0.053366184, z: 0.053366184}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2640,7 +2643,7 @@ GameObject:
   - component: {fileID: 1680188708}
   - component: {fileID: 1680188711}
   - component: {fileID: 1680188710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gear1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3143,6 +3146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3fcd11c4bfbb4498f3aac5467d5573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continuous: 0
   GearsSame:
   - {fileID: 1090236705}
   GearsOpposite:

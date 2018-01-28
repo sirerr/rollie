@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WorldManager : MonoBehaviour {
 
     public enum WorldSet { set,notset };
     public WorldSet PlayReady;
+    public GameObject deathArea;
     public Camera cam;
     public LayerMask lmask;
     public Text testText;
@@ -16,7 +18,7 @@ public class WorldManager : MonoBehaviour {
 
     void Start () {
         PlayReady = WorldSet.notset;
-          
+      //  SceneManager.LoadScene(1, LoadSceneMode.Additive);
 	}
 	
 	// Update is called once per frame
@@ -39,10 +41,14 @@ public class WorldManager : MonoBehaviour {
 
         if(Physics.Raycast(cam.transform.position,cam.transform.forward, out rhit,Mathf.Infinity,lmask.value) && PlayReady == WorldSet.notset)
         {
-            //PlayReady = WorldSet.set;
+            PlayReady = WorldSet.set;
 
-            GameObject obj = Instantiate(level0, rhit.point, Quaternion.identity) as GameObject;
-          //  startbutton.SetActive(false);
+            level0.SetActive(true);
+            level0.transform.position = rhit.point;
+
+            deathArea.SetActive(true);
+            deathArea.transform.position = rhit.point;
+            startbutton.SetActive(false);
         }
     }
 }
