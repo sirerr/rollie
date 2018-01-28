@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BasicWorldAction : MonoBehaviour {
 
+    public bool continuous = false;
+
 	public virtual void InteractStart()
 	{
 	}

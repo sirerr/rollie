@@ -39,10 +39,10 @@ public class WorldManager : MonoBehaviour {
 
         if(Physics.Raycast(cam.transform.position,cam.transform.forward, out rhit,Mathf.Infinity,lmask.value) && PlayReady == WorldSet.notset)
         {
-            PlayReady = WorldSet.set;
+            //PlayReady = WorldSet.set;
 
-            GameObject obj = Instantiate(level0, rhit.transform.position, Quaternion.identity) as GameObject;
-            startbutton.SetActive(false);
+            GameObject obj = Instantiate(level0, rhit.point, Quaternion.identity) as GameObject;
+          //  startbutton.SetActive(false);
         }
     }
 }
