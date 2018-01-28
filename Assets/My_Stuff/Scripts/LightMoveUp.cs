@@ -12,6 +12,7 @@ public class LightMoveUp : BasicWorldAction {
 	public float YSpeed = .3f;
 	float startY;
 	float MaxDistance = .17f;
+    public BasicWorldAction DoorAction;
 	void Start()
 
 
@@ -39,9 +40,10 @@ public class LightMoveUp : BasicWorldAction {
 		}
 		if (levertrig == true && trigger2 == false)
 		{
-			print ("disguy");
+			//print ("disguy");
 			anim.SetBool ("lightturn", true);
 			trigger2 = true;
+            DoorAction.InteractStart();
 		}
 	}
 

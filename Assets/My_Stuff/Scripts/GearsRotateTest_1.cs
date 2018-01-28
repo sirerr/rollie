@@ -17,8 +17,7 @@ public class GearsRotateTest_1 : BasicWorldAction {
 			Debug.LogWarning (name + " does not have a RigidBody 2D");
 		}
 	}
-
-
+    
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
