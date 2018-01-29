@@ -13,7 +13,7 @@ public class LightMoveUp : BasicWorldAction {
 	public float YSpeed = .3f;
 	float startY;
 	float MaxDistance = .17f;
-    public BasicWorldAction DoorAction;
+    //public BasicWorldAction DoorAction;
 	void Start()
 
 
@@ -45,7 +45,7 @@ public class LightMoveUp : BasicWorldAction {
 			anim.SetBool ("lightturn", true);
 			anim2.SetBool ("interact", true);
 			trigger2 = true;
-            DoorAction.InteractStart();
+          //  DoorAction.InteractStart();
 		}
 	}
 
@@ -61,15 +61,4 @@ public class LightMoveUp : BasicWorldAction {
 		moveup = false;
 	}
 
-	#if UNITY_EDITOR
-	void OnMouseUp()
-	{
-		InteractStop();
-	}
-
-	void OnMouseDown()
-	{
-		InteractStart();
-	}
-	#endif
 }

@@ -52,16 +52,5 @@ public class GearsRotateTest_1 : BasicWorldAction {
 	{
 		rotating = false;
 	}
-
-	#if UNITY_EDITOR
-	void OnMouseUp()
-	{
-		InteractStop();
-	}
-
-	void OnMouseDown()
-	{
-		InteractStart();
-	}
-	#endif
+    
 }

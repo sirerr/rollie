@@ -6,7 +6,19 @@ public class BasicWorldAction : MonoBehaviour {
 
     public bool continuous = false;
 
-	public virtual void InteractStart()
+#if UNITY_EDITOR
+    void OnMouseUp()
+    {
+        InteractStop();
+    }
+
+    void OnMouseDown()
+    {
+        InteractStart();
+    }
+#endif
+
+    public virtual void InteractStart()
 	{
 	}
 

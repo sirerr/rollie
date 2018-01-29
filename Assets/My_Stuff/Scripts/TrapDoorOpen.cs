@@ -20,16 +20,5 @@ public class TrapDoorOpen : BasicWorldAction {
 	void Update () {
  
 	}
-
-	#if UNITY_EDITOR
-	void OnMouseUp()
-	{
-		InteractStop();
-	}
-
-	void OnMouseDown()
-	{
-		InteractStart();
-	}
-	#endif
+    
 }

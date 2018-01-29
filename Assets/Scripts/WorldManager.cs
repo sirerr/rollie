@@ -10,7 +10,6 @@ public class WorldManager : MonoBehaviour {
     public static WorldManager manager;
     public enum WorldSet { set,notset };
     public WorldSet PlayReady;
-    public GameObject deathArea;
     public Camera cam;
     public LayerMask lmask;
     public Text testText;
@@ -65,9 +64,7 @@ public class WorldManager : MonoBehaviour {
 
             level0.SetActive(true);
             level0.transform.position = rhit.point;
-
-            deathArea.SetActive(true);
-            deathArea.transform.position = rhit.point;
+            
             startbutton.SetActive(false);
         }
     }

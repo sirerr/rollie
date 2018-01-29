@@ -16,6 +16,12 @@ public class MotherShip : MonoBehaviour
 		print ("got hit by something");
 			anim.SetBool ("FlyAway", true);
 			collision.gameObject.SetActive (false);
-	
+        StartCoroutine(SmallWait());
 	}
+
+    IEnumerator SmallWait()
+    {
+        yield return new WaitForSeconds (2f);
+        WorldManager.manager.Level2();
+    }
 }

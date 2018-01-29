@@ -16,18 +16,7 @@ public class SpringUp : BasicWorldAction
         anim = GetComponent<Animator>();
         launcher.SetSpring(this);
     }
-
-#if UNITY_EDITOR
-    void OnMouseUp()
-    {
-        InteractStop();
-    }
-
-    void OnMouseDown()
-    {
-        InteractStart();
-    }
-#endif
+    
 
     public void DoSpringUp()
     {
